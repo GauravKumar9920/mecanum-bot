@@ -1,0 +1,15 @@
+<launch>
+
+    <rosparam command="load" file="$(find config_package)/config/robot_params.yaml" ns="robot"/>
+    <rosparam command="load" file="$(find config_package)/config/embedded_params.yaml" ns="embedded"/>
+    <rosparam command="load" file="$(find config_package)/config/wheel_light_config.yaml"  ns="wheel_light" />
+
+    <node pkg="embedded_communication" type="light_board_controller.py" name="light_controller" output="screen" />
+    <node pkg="embedded_communication" type="ultrasonic_read.py" name="ultrasonic_node" output="screen" />
+    <node pkg="embedded_communication" type="wheel_light_controller.py" name="wheel_light_controller" output="screen" />
+
+    <include file="$(find alog_control)/launch/joystick.launch" />
+
+    <node pkg="alog_control" type="launch_control.py" name="alog_launch_controller" output="screen"/>
+    
+</launch>

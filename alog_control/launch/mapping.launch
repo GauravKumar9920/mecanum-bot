@@ -1,0 +1,16 @@
+<launch>
+    <arg name="scan_topic" default="/scan_filtered"/>
+  
+  
+    <include file="$(find sensors_package)/launch/lidar.launch" />
+    <include file="$(find sensors_package)/launch/laser_filters.launch" />
+
+    <node pkg="holonomic_controller" type="holonomic_odometry_node" respawn="false" name="odometry_node" output="screen"/>
+  
+    <!-- Launches IMU Node-->
+    <node pkg="sensors_package" type="imu.py" respawn="false" name="imu_node" output="screen"/>
+
+    <include file="$(find alog_control)/launch/gmapping_slam.launch" />
+
+  </launch>
+  

@@ -1,0 +1,12 @@
+<launch>
+ 
+
+  <!--  <include file="$(find sensors_package)/launch/hardware.launch" /> --> <!-- Launches Odometry Node-->
+  <node pkg="holonomic_controller" type="holonomic_odometry_node" respawn="false" name="odometry_node" output="screen"/>
+  
+  <!-- Launches IMU Node-->
+  <node pkg="sensors_package" type="imu.py" respawn="false" name="imu_node" output="screen"/>
+
+
+
+</launch>

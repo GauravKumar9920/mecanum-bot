@@ -1,0 +1,28 @@
+<launch>
+    <arg name="open_rviz" default="true"/>
+    <arg name="map_name" default="/home/dotkat012/maps/mechlab.yaml" />   
+
+    <include file="$(find sensors_package)/launch/hardware.launch" />
+
+    <node pkg="map_server" type="map_server" name="map_server" args="$(arg map_name)"/>
+
+    <node pkg="embedded_communication" type="ultrasonic_manager.py" name="ultra_manager" output = "screen"/>    
+
+    <node pkg="embedded_communication" type="cliff_manager.py" name="cliff_manager" output = "screen"/> 
+  
+    <include file="$(find alog_control)/launch/move_base.launch"/>
+
+    <include file="$(find alog_control)/launch/amcl.launch" />
+    <!-- <include file="$(find alog_urdf_v3)/launch/display.launch" /> -->
+
+    <!-- rviz -->
+    <group if="$(arg open_rviz)"> 
+    <node pkg="rviz" type="rviz" name="rviz" required="true"
+          args="-d $(find alog_control)/rviz/alog_navigation.rviz"/>
+    </group>
+    
+    <!-- load the aruco launch for marker detection -->
+    <include file="$(find alog_control)/launch/aruco.launch">
+    </include>
+
+</launch>

@@ -1,0 +1,15 @@
+<launch>
+ 
+ <!-- Launches Odometry Node-->
+  <!-- <node pkg="holonomic_controller" type="holonomic_odometry_node" respawn="false" name="odometry_node" output="screen"/> -->
+  
+  <!-- Launches IMU Node-->
+  <!-- <node pkg="sensors_package" type="imu.py" respawn="false" name="imu_node" output="screen"/> -->
+
+
+  <!-- Launch the waypoints_controller -->
+  <node name="waypoints_controller" pkg="alog_control" type="waypoints_controller.py" output="screen"/>
+  <!-- <node name="waypoints_controller_traj_gen" pkg="alog_control" type="waypoints_controller_traj_gen.py" output="screen"/>  -->
+  <!-- Launch the waypoints_traj_controller -->
+  <node name="waypoints_traj_controller" pkg="alog_control" type="waypoints_traj_controller.py" output="screen"/>
+</launch>
