@@ -1,0 +1,6 @@
+string light
+string command
+int16[] clr1
+int16[] clr2
+---
+bool response
