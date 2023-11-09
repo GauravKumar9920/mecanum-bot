@@ -1,45 +1,20 @@
 # Robot-alog
 
-This repo contains about the code set for alog robot(A four-wheeled mecanum bot following non-holonomic constrains) - stand alone API for Navigation process. Detailed Documentation can be found in /Documents folder.
+This repository contains the code set for Alog robot, a four-wheeled mecanum bot following non-holonomic constraints. The stand-alone API for navigation processes is documented in detail in the /Documents folder.
 
-# How to use this repo
+## How to use this repo
 
-Clone the repo, Run odom_custom.launch for the bot to be publish it's odomery data, following which you can run any of the scripts or launch files.
+1. Clone the repo.
+2. Run `odom_custom.launch` for the bot to publish its odometry data.
+3. After that, you can run any of the scripts or launch files.
 
-move_base goes to the initial Starting postion, .traj_trac.launch gernates random waypoints and genrates a smooth curve following the waypoints, this genrated trajectory is followed by the bot.
+The `move_base` script goes to the initial starting position. The `.traj_trac.launch` script generates random waypoints and generates a smooth curve following these waypoints, which the bot then follows.
 
-Ps- Most of the scripts and it's usage documentaion can be found in the documentation folder along with the repository achitecture.
+Note: Most of the scripts and their usage documentation can be found in the documentation folder along with the repository architecture.
 
-All the testing videos and SS can be found in the porject_report.pdf resources part(in the end)
+All testing videos and screenshots can be found in the `project_report.pdf` resources part (at the end).
 
-![alt text](https://github.com/GauravKumar9920/mecanum-bot/blob/main/Documents/ss/Alogmini.jpeg)
+![Holonomin-Bot](https://github.com/GauravKumar9920/mecanum-bot/blob/main/Documents/ss/Alogmini.jpeg)
 
+## Repo structure 
 
-# Repo structure 
-
-Mecanum-Bot/
-├─ Alog-Control/
-│  ├─ launch/
-│  │  ├─ gmapping_slam.launch
-│  │  ├─ joystick.launch
-│  │  ├─ mapping.launch
-│  │  ├─ move_base.launch
-│  │  ├─ navigation.launch
-│  │  ├─ odom_custom.launch
-│  │  ├─ startup.launch
-│  │  ├─ traj_trac.launch
-│  ├─ rviz/
-│  ├─ scripts/
-│  │  ├─ base_move.py
-│  │  ├─ gnav2.py
-│  │  ├─ go_to_goal.py
-│  │  ├─ vel_pub.py
-│  │  ├─ waypoints_controller_traj_gen.py
-│  │  ├─ waypoints_controller.py
-│  │  ├─ waypoints_traj_controller.py
-│  ├─ src/
-├─ Documents/
-├─ Embedded_communication/
-├─ holonomic_controller/
-├─ rplidar_ros/
-├─ stop_recovery/
