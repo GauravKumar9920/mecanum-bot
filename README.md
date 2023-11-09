@@ -12,7 +12,7 @@ Ps- Most of the scripts and their usage documentation can be found in the docume
 
 All the testing videos and SS can be found in the porject_report.pdf resources part(in the end)
 
-Trajectory-
+Optimal Trajectory generated through randomly given points-
 
 ![navpath](https://github.com/GauravKumar9920/mecanum-bot/assets/84905312/5bf5ae92-150e-414c-a8be-c5f30bc0ffb9)
 
