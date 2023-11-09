@@ -1,20 +1,21 @@
 # Robot-alog
 
-This repository contains the code set for Alog robot, a four-wheeled mecanum bot following non-holonomic constraints. The stand-alone API for navigation processes is documented in detail in the /Documents folder.
+This repo contains about the code set for alog robot(A four-wheeled mecanum bot following non-holonomic constrains) - stand alone API for Navigation process. Detailed Documentation can be found in /Documents folder.
 
-## How to use this repo
+# How to use this repo
 
-1. Clone the repo.
-2. Run `odom_custom.launch` for the bot to publish its odometry data.
-3. After that, you can run any of the scripts or launch files.
+Clone the repo, Run odom_custom.launch for the bot to be publish it's odomery data, following which you can run any of the scripts or launch files.
 
-The `move_base` script goes to the initial starting position. The `.traj_trac.launch` script generates random waypoints and generates a smooth curve following these waypoints, which the bot then follows.
+move_base goes to the initial Starting postion, .traj_trac.launch gernates random waypoints and genrates a smooth curve following the waypoints, this genrated trajectory is followed by the bot.
 
-Note: Most of the scripts and their usage documentation can be found in the documentation folder along with the repository architecture.
+Ps- Most of the scripts and it's usage documentaion can be found in the documentation folder along with the repository achitecture.
 
-All testing videos and screenshots can be found in the `project_report.pdf` resources part (at the end).
+All the testing videos and SS can be found in the porject_report.pdf resources part(in the end)
 
-![Holonomin-Bot](https://github.com/GauravKumar9920/mecanum-bot/blob/main/Documents/ss/Alogmini.jpeg)
+Trajecotry-
+![Bot-Trajectory](https://github.com/GauravKumar9920/mecanum-bot/blob/main/Documents/ss/navpath.png)
 
-## Repo structure 
+Holonomic-Bot-
+![Holonomic-Bot](https://github.com/GauravKumar9920/mecanum-bot/blob/main/Documents/ss/Alogmini.jpeg)
+
 
