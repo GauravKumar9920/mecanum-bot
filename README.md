@@ -11,6 +11,10 @@ move_base goes to the initial Starting postion, .traj_trac.launch gernates rando
 Ps- Most of the scripts and it's usage documentaion can be found in the documentation folder along with the repository achitecture.
 
 All the testing videos and SS can be found in the porject_report.pdf resources part(in the end)
+
+![alt text](https://github.com/GauravKumar9920/mecanum-bot/blob/main/Documents/ss/Alogmini.jpeg)
+
+
 # Repo structure 
 
 Mecanum-Bot/
