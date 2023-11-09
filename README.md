@@ -13,9 +13,9 @@ Ps- Most of the scripts and it's usage documentaion can be found in the document
 All the testing videos and SS can be found in the porject_report.pdf resources part(in the end)
 
 Trajecotry-
-![Bot-Trajectory](https://github.com/GauravKumar9920/mecanum-bot/blob/main/Documents/ss/navpath.png)
+![Bot-Trajectory](/Documents/ss/navpath.png)
 
 Holonomic-Bot-
-![Holonomic-Bot](https://github.com/GauravKumar9920/mecanum-bot/blob/main/Documents/ss/Alogmini.jpeg)
+![Holonomic-Bot](/Documents/ss/Alogmini.jpeg)
 
 
