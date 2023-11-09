@@ -19,3 +19,12 @@ Trajectory-
 
 Holonomic-Bot-
 ![Alogmini](https://github.com/GauravKumar9920/mecanum-bot/assets/84905312/31275b1a-3af4-457d-bb18-716a150ffaea)
+
+Optically Tracking trajectory using fiducial Markers-
+![IMG_20230711_125456463-min](https://github.com/GauravKumar9920/mecanum-bot/assets/84905312/9de589ca-8756-44d5-b1e3-16d5e7774d8f)
+
+Bot following a Provided Trajectory - 
+
+https://github.com/GauravKumar9920/mecanum-bot/assets/84905312/e31a00a7-59d1-471a-a564-6e232efb81c5
+
+
